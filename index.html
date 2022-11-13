@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arthur Melo Cruz</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+<div class="container-fluid">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class = "navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+				<a class="nav-link py-1" href="index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link py-1" href="#about">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link py-1" href="#projects">Projects</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link py-1" href="#contact">Contact</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>
+
+<!--- Name Section -->
+<div class="container-fluid padding padding-top dark-color light-font">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-3">Arthur Melo Cruz</h1>
+		</div>
+		<hr>
+		<div class="col-12">
+			<p class="lead"> Aerospace & Robotics Engineer | PhD Student at Penn State University</p>
+		</div>
+	</div>
+</div>
+
+
+
+<!--- ABOUT -->
+<div class="container-fluid padding padding-top about light-color dark-font" id="about">
+
+	<!--- About -->
+	<div class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h2 class="display-4 pt-2">About</h2>
+			</div>
+			<hr>
+		</div>
+	</div>
+
+
+	<div class="row padding">
+		<div class="col-md-4 col-lg-4">
+			<img src="amc6630.jpeg" class="img-fluid circleImg">
+		</div>
+		<div class="col-md-8 col-lg-6">
+			<p class="padding-top">I am currently a PhD sudent in the Department of Aerospace Engineering at Penn State University. My research focuses on the intersection between Machine Learning, Machine Ethics and Human-Robot interaction. I am currently investigating the use of Reinforcement Learning and Inverse Reiforcement Learning to model and replicate human ethical behavior in a wide range of scenarios, especially ones that involve ethical dilemmas. Prior to starting my graduate studies, I was a Technology Consultat at PwC (PricewaterhouseCoopers) in Washington D.C.</p>
+			<br>
+		</div>
+	</div>
+	<div class ="col-12 text-center">
+		<a href="resume.pdf"><button type="button" class="btn btn-primary btn-lg">Resumé</button></a>
+	</div>
+</div>
+
+
+  
+<!--- PROJECTS-->
+<div class="container-fluid padding padding-top dark-color light-font id="projects">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h2 class="display-4">Projects</h2>
+		</div>
+		<hr>
+	</div>
+</div>
+
+<div class="container py-3">
+	<div class="card pad border border-dark w-100">
+		 <div class="row ">
+
+			<div class="col-md-4">
+
+				<div id="homeinvasion" class="carousel slide" data-ride="carousel">
+					  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img class="d-block w-100" src="img/execution_paths.png" alt="First slide">
+							</div>
+						<div class="carousel-item">
+							  <img class="d-block w-100" src="img/home_invasion_arena.png" alt="Second slide">
+						</div>
+						<div class="carousel-item">
+							  <img class="d-block w-100" src="img/values_policy_mapping.png" alt="Third slide">
+						</div>
+					  </div>
+					  <a class="carousel-control-prev" href="#homeinvasion" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next" href="#homeinvasion" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					  </a>
+				</div>
+
+			  </div>
+
+			  <div class="col-md-8 nopadding">
+
+				<div class="card-block px-3">
+					  <h4 class="card-title pt-3">Inverse Reinforcement Learning Framework for Autonomous Decision-Making in an Ethical Dilemma</h4>
+						  <p class="card-text">The principle of value alignment directs that autonomous decision- making should be aligned with the values of humans acting on a given scenario. Following this principle, we develop methods allow- ing an ethical exemplar to train an artificial agent so that the agent’s values will align with the exemplar’s. We then test our methods on an ethical dilemma that has no universally agreed upon solution. We propose an architecture that leverages Inverse Reinforcement Learning (IRL) to allow an agent to learn different ethical behaviors from human demonstrations, decoupling decision-making from action execution and utilizing a reward framework based on end states. We evaluate the proposed architecture on a home invasion scenario, training an agent to generate different behaviors when facing the threat of a home break-in by a hostile actor. Our tests show convergence over three different human-demonstrated poli- cies (hide, call the police, and kill the invader) for decision-making, with the agent first deciding what to do based on contextual input, and subsequently interacting with the environment with actions to execute its decision. The results demonstrate that the proposed architecture is capable of producing value-aligned ethical behavior and can, perhaps, serve as a template for similar scenarios that involve ethical dilemmas.</p>
+				  </div>
+			  </div>
+
+		 </div>
+	  </div>
+</div>
+
+<!--- Connect -->
+<div class="container-fluid padding padding-top light-color" id="contact">
+	<div class="row text-center padding">
+		<div class="col-12">
+			<h2 class="display-4">Contact</h2>
+		</div>
+		<div class="col-12 social padding">
+			<a href="https://www.linkedin.com/in/arthur-melo-cruz/"><i class="fab fa-linkedin"></i></a>
+			<a href="https://github.com/alphamikecharlie"><i class="fab fa-github"></i></a>
+		</div>
+		
+	</div>
+
+	<div class="col-12">
+		<h3>Email</h3>
+	</div>
+	<div class="col-12">
+		<p class="lead">amc6630-at-psu-dot-edu</p>
+	</div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#navbarResponsive a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
+
+
+
+</body>
+</html>
