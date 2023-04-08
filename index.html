@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Personal Website</title>
+	<title>Arthur Melo Cruz's Personal Website</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 		body {
-			font-family: Arial, sans-serif;
+			font-family: 'Courier New', Courier, monospace;
 			margin: 0;
 			padding: 0;
+            overflow: auto;
 		}
 
 		header {
-			background-color: #333;
-			color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+			background-color: #152238;
+            z-index: 9999;
+			color: #ffffff;
 			padding: 20px;
 			text-align: center;
 		}
@@ -49,7 +55,7 @@
 		}
 
 		.project {
-			margin-top: 40px;
+			margin-top: 20px;
 			border-top: 1px solid #ccc;
 			padding-top: 20px;
 		}
@@ -68,41 +74,119 @@
 			height: auto;
 			margin-top: 10px;
 		}
+        .social-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .social-links-linkedin a {
+            display: inline-block;
+            margin: 0 0px;
+            padding: 7px 15px;
+            background-color: #0077B5;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 15px;
+            transition: background-color 0.3s ease;
+            }
+
+        .social-links-linkedin a:hover {
+            background-color: #333;
+        }
+
+        .social-links-github a {
+            display: inline-block;
+            margin: 0 0 0 10px;
+            padding: 7px 15px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 15px;
+            transition: background-color 0.3s ease;
+            }
+
+        .social-links-github a:hover {
+            background-color: #555;
+        }
+
 	</style>
 </head>
 <body>
-	<header>
-		<h1>My Name</h1>
-		<p>Personal Summary Here</p>
+    <header>
+		<h1>Arthur Melo Cruz</h1>
 	</header>
 	<main>
 		<section>
+            <br><br><br><br>
+			<h2>About</h2>
+			<p>I am a graduate student in the Department of Aerospace Engineering at Penn State University. My research focuses on robot learning, primarily applied in the context of Human-Robot Interaction. I am currently investigating the use of Reinforcement Learning and Inverse Reinforcement Learning to model and replicate human behavior in a range of scenarios, especially ones that involve ethical dilemmas. Prior to starting my graduate studies I was a Technology Consultant at PwC (PricewaterhouseCoopers) in Washington DC.</p>
+            <div style="display: flex;">
+                <div class="social-links-linkedin">
+                    <a href="https://www.linkedin.com/in/arthur-melo-cruz/" target="_blank">LinkedIn</a>
+                </div>
+                <div class="social-links-github">
+                    <a href="https://github.com/alphamikecharlie" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </section>
+		<section>
 			<h2>Education</h2>
 			<ul>
-				<li>Degree, Major, Institution, Graduation Year</li>
-				<li>Degree, Major, Institution, Graduation Year</li>
+                <b>Master of Science, Aerospace Engineering</b>
+				<li>The Pennsylvania State University, University Park, PA<br>Expected Graduation Date: Dec 15, 2023<br> GPA: 3.94</li>
+                <b>Bachelor of Science, Aerospace Engineering</b>
+				<li>The Pennsylvania State University, University Park, PA<br>Graduation Date: May 4, 2018<br> GPA: 4.0</li>
 			</ul>
 		</section>
 		<section>
-			<h2>Work History</h2>
+			<h2>Professional Experience</h2>
 			<ul>
-				<li>Position, Company, Dates of Employment</li>
-				<li>Position, Company, Dates of Employment</li>
-			</ul>
+				<b>Graduate Research Assistant</b>
+				<li>Robot Ethics and Aerial Vehicles Lab, The Pennsylvania State University, University Park, PA<br>January 2022 - Present</li>
+				<li>- Working with Dr. Alan Wagner on robot learning research, engaged in using reinforcement learning (RL) and inverse reinforcement learning (IRL) to implement ethical decision-making models in robots</li>
+                <br><br>
+                <b>PwC Technology Consultant</b>
+				<li>PricewaterhouseCoopers Advisory Services LLC, Washington D.C.<br>August 2018 - October 2021</li>
+				<li>- Worked under the Aerospace and Defense / Industrial Products and Services industry vertical, serving Fortune 500 clients across aerospace and defense, oil and gas, and healthcare industries</li>
+                <br><br>
+                <b>PwC Technology Consulting Intern</b>
+				<li>PricewaterhouseCoopers Advisory Services LLC, Chicago, IL<br>June 2017 - August 2017</li>
+				<li>- Worked on a Salesforce-based cloud configuration / implementation project for an aerospace client</li>
+            </ul>
 		</section>
 		<section>
 			<h2>Portfolio</h2>
+            <div class="project">
+				<h3>Robot Learning for Search and Rescue</h3>
+				<p>In this project, I am investigating the use of reinforcement learning to train a robot to perform a search and rescue operation in the presence of a threat actor. The goal is to develop an agent that can locate and rescue survivors while avoiding detection and capture by the threat actor. I am exploring different reward and state-space structures to optimize the agent's performance in this complex and dynamic environment. The project has implications for disaster response and emergency management, where quick and effective search and rescue operations can save lives.</p>
+                <h4>Citations</h4>
+                <ul>
+                    <li>Publication pending.</li>
+                </ul>
+            </div>
+            <div class="project">
+				<h3>Teaching Value Alignment in Decision-Making to Robots</h3>
+				<p>This project aims to align autonomous agents' decision-making with human values by training them with ethical exemplars. We propose an architecture that uses Inverse Reinforcement Learning to teach an agent different ethical behaviors from human demonstrations. Our tests on a home invasion scenario show convergence and successful execution of the policies, both virtually and physically, demonstrating the potential of our architecture as a template for other ethically-charged scenarios.</p>
+                <h4>Citations</h4>
+                <ul>
+                    <li>Publication pending.</li>
+                </ul>
+            </div>
 			<div class="project">
-				<h3>Project 1</h3>
-				<p>Description of project 1</p>
-				<img src="project1.jpg" alt="Project 1">
-			</div>
-			<div class="project">
-				<h3>Project 2</h3>
-				<p>Description of project 2</p>
-				<img src="project2.jpg" alt="Project 2">
-			</div>
+				<h3>Deceptive Robots for Game-Playing and Pill Sorting</h3>
+				<p>In this project, I am investigating the use of deceptive robots in scenarios such as game-playing with children and pill sorting. The aim is to explore how robots can be designed and programmed to deceive humans in a way that can be beneficial in certain contexts.</p>
+                <h4>Citations</h4>
+                <ul>
+                    <li>Vidullan Surendran, Arthur Melo Cruz, Alan R. Wagner, Jason Borenstein, Ronald C. Arkin, Shengkang Chen. Informing a Robot Ethics Architecture Through Folk and Expert Morality. Proceedings of the Seventh International Conference on Robot Ethics and Standards (ICRES 2022).</li>
+                    <li>Shengkang Chen, Ronald C. Arkin, Jason Borenstein, Alan R. Wagner, Arthur Melo Cruz. Case-Based Robotic Architecture with Multiple Underlying Ethical Frameworks for Human-Robot Interaction. Proceedings of the Seventh International Conference on Robot Ethics and Standards (ICRES 2022).</li>
+                </ul>
+            </div>
+
 		</section>
 	</main>
 </body>
 </html>
+``
